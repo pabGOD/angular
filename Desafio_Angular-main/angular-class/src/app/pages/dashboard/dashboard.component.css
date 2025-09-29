@@ -1,0 +1,123 @@
+h1.Ford {
+    text-align: center;
+    color: #2c3e50; 
+    margin: 40px 0 20px 0; 
+    font-weight: 700; 
+    font-size: 2.5em; 
+    letter-spacing: -0.5px; 
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0; 
+    width: 60%; 
+    margin: 20px auto 40px auto;
+}
+
+.shadow {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.border {
+    border: 1px solid #e0e0e0;
+}
+
+.border-primary-subtle {
+    border-color: #d1e7dd !important;
+}
+
+.p-3 {
+    padding: 20px !important;
+}
+
+.p-2 {
+    padding: 15px !important; 
+}
+
+section.d-flex {
+    display: flex; 
+    gap: 30px; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+
+section.d-flex > div:first-child {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.d-flex > div:first-child h2 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+select {
+    width: 80%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px; 
+    background-color: #f8f9fa;
+    font-size: 1em;
+    color: #495057;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23495057" d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592c.859 0 1.319 1.013.753 1.658L8.753 11.14a1 1 0 0 1-1.506 0z"/></svg>'); /* Seta customizada */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+app-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    max-width: 400px;
+    flex-grow: 1;
+}
+
+.Ford {
+  text-align: center;
+}
+
+.table-section {
+  margin-bottom: 50px; 
+}
+
+.gradient-background {
+  /* Gradiente linear */
+  background: linear-gradient(to top, #1f2225, #ffffff);
+  margin-top: 40px;
+  padding: 60px 20px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.imagemCarro{ 
+  background-color: transparent;
+  width: 80%;
+}

@@ -1,0 +1,31 @@
+<section class="tabela">
+<table class="mt-1 table">
+    <thead >
+        <tr class= "info">
+            <th class="p-3">VIN</th>
+            <th class="p-3">ODOMETRO</th>
+            <th class="p-3">NIVEL DO COMBUSTIVEL</th>
+            <th class="p-3">STATUS</th>
+            <th class="p-3">LAT</th>
+            <th class="p-3">LOG</th>
+         </tr>
+    </thead>
+
+    <tbody class="info">
+        <td class="d-flex">
+            <input class="w-100 border 0" type="text" placeholder="{{ vin }}" value="{{ vin }}" >
+        </td>
+        <td class="p-2">{{odometro}}</td>
+        <td class="p-2">
+  <div class="fuel-bar-container">
+    <div class="fuel-bar" [style.width.%]="nivelCombustivel" [style.background-color]="getFuelColor()">
+        <span class="fuel-percentage">{{ nivelCombustivel }}%</span>
+    </div>
+</div>
+</td>
+        <td class="p-2" [ngClass]="getStatusClass()"></td>
+        <td class="p-2">{{lat}}</td>
+        <td class="p-2">{{long}}</td>
+    </tbody>
+</table>
+</section>

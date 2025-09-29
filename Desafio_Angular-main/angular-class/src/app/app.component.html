@@ -1,0 +1,8 @@
+
+<div class="page-container">
+  <app-cabecalho *ngIf="!(isLoginPage$ | async)"></app-cabecalho>
+  <main class="content-wrap">
+    <router-outlet />
+  </main>
+  <app-roda-pe *ngIf="!(isLoginPage$ | async)"></app-roda-pe>
+</div>

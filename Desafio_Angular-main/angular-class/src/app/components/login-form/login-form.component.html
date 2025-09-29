@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+  <!--campos do login - Usuario -->
+  <div class="mb-3">
+    <label for="usernameLogin" class="form-label">Usuário</label>
+    <input type="text" class="form-control" id="usernameLogin" formControlName="username">
+    <div *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched" class="text-danger">
+      Usuário é obrigatório.
+    </div>
+  </div>
+
+<!--campos do login - Senha -->
+  <div class="mb-3">
+    <label for="passwordLogin" class="form-label">Senha</label>
+    <input type="password" class="form-control" id="passwordLogin" formControlName="password">
+    <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched" class="text-danger">
+      Senha é obrigatória.
+    </div>
+  </div>
+
+<!--campos do login - COnfirmar & Cadastro -->
+  <button type="submit" class="btn btn-primary w-100">Login</button>
+  
+</form>

@@ -1,0 +1,115 @@
+.menu-toggle {
+  border: none;
+  color: rgb(51, 0, 255);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  z-index: 10;
+
+}
+
+.btn-close{
+  margin-left: 0;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 15px;
+}
+
+.ford-logo {
+  height: 40px;
+  display: block;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.header{
+position: fixed;
+}
+
+.offcanvas-body {
+  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+.offcanvas-body .btn-primary {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  border-radius: 8px; 
+  font-size: 1rem;
+  font-weight: 500; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-body .btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.offcanvas-body .btn-primary:active {
+  background-color: #004085;
+  transform: translateY(0); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-body .logout.btn-danger {
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  margin-top: auto; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-body .logout.btn-danger:hover {
+  background-color: #c82333; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-body .logout.btn-danger:active {
+  background-color: #bd2130;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .offcanvas-body {
+    padding: 15px; 
+  }
+
+  .offcanvas-body .btn {
+    font-size: 0.95rem;
+    padding: 10px 15px; 
+    }
+}
